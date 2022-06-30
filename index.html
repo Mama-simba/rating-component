@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+
+
+  <div class="ratingcard" id="ratingcard">
+
+    <img class="staricon" src="./images/icon-star.svg" alt="star icon">
+
+
+    <div class="question">
+      <h2>How did we do?</h2>
+    </div>
+    
+    <div class="description">
+      <p>Please let us know how we did with support request.
+        All feedback is appreciated to help us improve our offering!
+      </p>
+    </div>
+
+    <div class="rating">
+      <a id="rate1" class="ratebutton" href="#">1</a>
+      <a id="rate2" class="ratebutton" href="#">2</a>
+      <a id="rate3" class="ratebutton" href="#">3</a>
+      <a id="rate4" class="ratebutton" href="#">4</a>
+      <a id="rate5" class="ratebutton" href="#">5</a>
+    </div>
+    
+    <button id="submit">SUBMIT</button>
+
+  </div>
+
+
+
+
+  <div class="submissioncard" id="submissioncard">
+
+    <img class="thankyouimg" src="./images/illustration-thank-you.svg" alt="Thank you message">
+
+    <p class="selection">You selected <span id="rateselected"></span> out of 5</p>
+
+    <h2>Thank you!</h2>
+
+    <p class="message">We appreciate you taking the time to give a rating. 
+      If you ever need more support, don't hesitate to get in touch!
+    </p>
+
+  </div>
+
+  
+
+  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.cristina-padilla.com/" target="_blank">Cristina Padilla</a>.
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--verydarkblue);
+  color: var(--white);
+}
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --lightgrey: hsl(217, 12%, 63%);
+    --mediumgrey: hsl(216, 12%, 54%);
+    --darkblue: hsl(213, 19%, 18%);
+    --verydarkblue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+}
+
+
+.ratingcard {
+    width: 25%;
+    background-color: var(--darkblue);
+    margin: 10% auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+}
+
+
+
+.staricon {
+    display: block;
+    background-color: var(--darkblue);
+    box-shadow: 0px 0px 5px -2px #797878;
+    width: 15px;
+    height: 15px;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.question {
+    margin: 2rem 0 1rem 0;
+    font-weight: 700;
+}
+
+.description {
+    color: var(--lightgrey);
+    width: 90%;
+    line-height: 1.7;
+}
+
+
+.rating {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.ratebutton {
+    text-align: center;
+    text-decoration: none;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    color: var(--lightgrey);
+    background-color: var(--darkblue);
+    box-shadow: 0px 0px 5px -2px #797878;
+    border-radius: 50%;
+}
+
+.ratebutton:hover{
+    background-color: var(--orange);
+    color: white;
+    cursor: pointer;
+}
+
+.ratebutton.active {
+    background-color: var(--mediumgrey);
+    color: var(--white);
+}
+
+
+
+button {
+    width: 90%;
+    background-color: var(--orange);
+    border: none;
+    color: var(--white);
+    border-radius: 15px;
+    padding: 8px 0;
+    margin-top: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+}
+
+button:hover {
+    color: var(--orange);
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+
+
+/* SUBMISSION */
+
+.submissioncard {
+    width: 25%;
+    background-color: var(--darkblue);
+    margin: 10% auto;
+    border-radius: 20px;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    display: none;
+}
+
+
+.thankyouimg {
+    display: block;
+    margin: 1rem auto;
+   
+}
+
+.submissioncard .selection {
+    color: var(--orange);
+    background-color: var(--darkblue);
+    box-shadow: 0px 0px 5px -2px #797878;
+    width:60%;
+    margin: 2rem auto 2.5rem auto;
+    padding: 4px 0;
+    border-radius: 15px;
+}
+
+.submissioncard .message {
+    color: var(--mediumgrey);
+    line-height: 1.5;
+    margin: 1rem auto 2rem auto;
+    width: 95%;
+    
+
+}    
+
+
+@media screen and (max-width: 1034px) {
+    .ratingcard {
+        width: 35%;
+    }
+
+    .submissioncard {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .ratingcard {
+        width: 50%;
+    }
+
+    .submissioncard {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 533px) {
+    .ratingcard {
+        width: 70%;
+    }
+    .submissioncard {
+        width: 70%;
+    }
+
+    .attribution {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .submissioncard .selection{
+        width: 80%;
+    }
+   
+}    
+
+
+
+
+
+
+.attribution {
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--orange);
+}
+
+.attribution a:hover {
+    color: var(--lightgrey);
+
+}    
