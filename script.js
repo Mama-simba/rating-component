@@ -4,7 +4,7 @@
 let selectedRating;
 
 
-// 1. Change selected rate color in orange
+// 1. Change selected rate color
 
 let buttons = document.querySelectorAll(".ratebutton");
 
